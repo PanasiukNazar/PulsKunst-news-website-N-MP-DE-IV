@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- ===============================================-->
+        <!--    Document Title-->
+        <!-- ===============================================-->
+        <title>PulsKunst</title>
+
+        <!-- ===============================================-->
+        <!--    Favicons-->
+        <!-- ===============================================-->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/img/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/img/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/img/favicons/favicon-16x16.png"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="assets/img/favicons/favicon.ico"
+        />
+        <meta
+            name="msapplication-TileImage"
+            content="assets/img/favicons/mstile-150x150.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- ===============================================-->
+        <!--    Stylesheets-->
+        <!-- ===============================================-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link href="vendors/prism/prism.css" rel="stylesheet" />
+        <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+        <link href="assets/css/theme.css" rel="stylesheet" />
+        <link href="assets/css/user.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- ===============================================-->
+        <!--    Main Content-->
+        <!-- ===============================================-->
+        <main class="main" id="top">
+            <div class="cursor-outer d-none d-md-block"></div>
+            <nav class="navbar navbar-light py-3 px-0 overflow-hidden mb-5">
+                <div class="container px-md-5">
+                    <div class="row w-100 g-0 justify-content-between">
+                        <div class="col-8">
+                            <div class="d-inline-block">
+                                <a
+                                    class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center"
+                                    href="index.html"
+                                >
+                                    <img
+                                        class="img-fluid"
+                                        src="assets/img/icons/logo-icon.png"
+                                        alt=""
+                                    />
+                                    <span class="fw-bolder ms-2">Puls</span
+                                    ><span class="fw-thin">Kunst</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 d-lg-none text-end pe-0">
+                            <button
+                                class="btn p-0 shadow-none text-black fs-2 d-inline-block"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#navbarOffcanvas"
+                                aria-controls="navbarOffcanvas"
+                                aria-expanded="false"
+                                aria-label="Toggle offcanvas navigation"
+                            >
+                                <span class="menu-bar"></span>
+                            </button>
+                        </div>
+                        <div
+                            class="offcanvas offcanvas-end px-0"
+                            id="navbarOffcanvas"
+                            aria-labelledby="navbarOffcanvasTitle"
+                            aria-hidden="true"
+                        >
+                            <div class="offcanvas-header justify-content-end">
+                                <h5
+                                    class="visually-hidden offcanvas-title"
+                                    id="navbarOffcanvasTitle"
+                                >
+                                    Menu
+                                </h5>
+                                <button
+                                    class="btn p-0 shadow-none text-black fs-2 d-inline text-end"
+                                    type="button"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"
+                                >
+                                    <span class="menu-close-bar"></span>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body px-0">
+                                <div
+                                    class="d-lg-flex flex-center-start gap-3 overflow-hidden"
+                                >
+                                    <ul class="navbar-nav ms-auto fs-4 ps-6">
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="index.html"
+                                                >Home</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="exhibitions.html"
+                                                >Katalog</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="about.html"
+                                                >Über uns</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="blog.html"
+                                                >Kontakt</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div
+                                class="d-none d-lg-flex justify-content-end position-relative z-index-1"
+                            >
+                                <div
+                                    class="position-absolute absolute-centered z-index--1"
+                                >
+                                    <h1
+                                        class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1"
+                                    >
+                                        Home
+                                    </h1>
+                                </div>
+                                <div class="d-flex gap-3 align-items-start">
+                                    <a
+                                        class="mb-0 ms-auto text-warning fs-0 fw-bold text-uppercase"
+                                        href="blog.html#contact"
+                                        >Jetzt kontaktieren</a
+                                    >
+                                    <ul
+                                        class="navbar-nav navbar-fotogency ms-auto text-end"
+                                    >
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="index.html"
+                                                >Home</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="exhibitions.html"
+                                                >Katalog</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="about.html"
+                                                >Über uns</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="contact.html"
+                                                >Kontakt</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <article
+                class="container additional-wrapper"
+                style="margin-top: 20px"
+            >
+                <div class="page__content" style="padding: 20px 0px">
+                    <h1>
+                        Cookie-Richtlinie - Nachrichten über Kunst, Sport und
+                        Kultur in Deutschland
+                    </h1>
+
+                    <p>
+                        Auf unserer Website, die Nachrichten über Kunst, Sport
+                        und Kultur in Deutschland bietet, verpflichten wir uns,
+                        die Privatsphäre und Sicherheit unserer Nutzer zu
+                        schützen. Um die Erfahrung unserer Besucher und Follower
+                        zu verbessern, verwenden wir Cookies auf unserer
+                        Website. Diese Cookie-Richtlinie hat zum Ziel, zu
+                        erklären, was Cookies sind, wie wir sie auf unserer
+                        Website verwenden, welche Arten von Cookies wir nutzen
+                        und wie Sie Ihre Cookie-Einstellungen verwalten können.
+                    </p>
+
+                    <h2>1. Was sind Cookies?</h2>
+                    <p>
+                        Cookies sind kleine Textdateien, die auf Ihrem Gerät
+                        (Computer, Mobiltelefon oder jedes andere internetfähige
+                        Gerät) gespeichert werden, wenn Sie eine Website
+                        besuchen. Diese Dateien enthalten Informationen, die es
+                        der Website ermöglichen, Ihre Aktivitäten oder
+                        Präferenzen über einen Zeitraum hinweg zu speichern.
+                        Cookies werden häufig verwendet, um die Funktionalität
+                        von Websites zu verbessern, sie effizienter zu gestalten
+                        und eine personalisierte Benutzererfahrung zu bieten.
+                    </p>
+
+                    <p>
+                        Es gibt verschiedene Arten von Cookies, die für
+                        unterschiedliche Zwecke verwendet werden. Einige Cookies
+                        sind notwendig, damit die Website ordnungsgemäß
+                        funktioniert, während andere verwendet werden, um das
+                        Nutzerverhalten zu verfolgen und die Website zu
+                        verbessern oder für Werbezwecke.
+                    </p>
+
+                    <h2>2. Warum verwenden wir Cookies auf unserer Website?</h2>
+                    <p>
+                        Auf unserer Website für Nachrichten über Kunst, Sport
+                        und Kultur in Deutschland verwenden wir Cookies für
+                        verschiedene Zwecke. Hier sind einige der Hauptgründe,
+                        warum wir Cookies auf unserer Website einsetzen:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Verbesserung der Benutzererfahrung:</strong>
+                            Cookies ermöglichen es uns, Ihre Präferenzen und
+                            Einstellungen zu speichern, damit Sie nicht jedes
+                            Mal die gleichen Informationen eingeben müssen, wenn
+                            Sie unsere Website besuchen.
+                        </li>
+                        <li>
+                            <strong>Personalisierung:</strong> Cookies
+                            ermöglichen es uns, Ihnen personalisierte Inhalte
+                            und Anzeigen anzubieten, die für Sie von Interesse
+                            sein könnten, basierend auf Ihrem Surfverhalten auf
+                            unserer Website.
+                        </li>
+                        <li>
+                            <strong>Analyse und Leistung:</strong> Wir verwenden
+                            Cookies, um Daten darüber zu sammeln, wie Nutzer mit
+                            unserer Website interagieren, was uns hilft, die
+                            Funktionalität und das Design zu verbessern.
+                        </li>
+                        <li>
+                            <strong>Werbung:</strong> Wir verwenden Cookies, um
+                            Ihnen relevante Anzeigen zu zeigen, die mit unseren
+                            Nachrichten über Kunst, Sport und Kultur in
+                            Deutschland in Verbindung stehen. Dies umfasst
+                            Anzeigen, die auf Ihrem Surfverhalten auf unserer
+                            Website basieren.
+                        </li>
+                        <li>
+                            <strong>Sicherheit:</strong> Einige Cookies werden
+                            verwendet, um die Sicherheit unserer Website zu
+                            gewährleisten, wie zum Beispiel die Überprüfung der
+                            Identität der Nutzer und den Schutz vor Betrug.
+                        </li>
+                    </ul>
+
+                    <h2>3. Arten von Cookies, die wir verwenden</h2>
+                    <p>
+                        Es gibt verschiedene Kategorien von Cookies, die wir auf
+                        unserer Website verwenden. Im Folgenden werden die
+                        wichtigsten Kategorien von Cookies beschrieben, die wir
+                        einsetzen:
+                    </p>
+
+                    <h3>3.1. Notwendige Cookies</h3>
+                    <p>
+                        Notwendige Cookies sind entscheidend, damit unsere
+                        Website ordnungsgemäß funktioniert. Ohne diese Cookies
+                        können einige Teile der Website möglicherweise nicht
+                        zugänglich oder nicht richtig funktionsfähig sein. Diese
+                        Cookies erfordern keine Zustimmung und werden
+                        automatisch aktiviert, wenn Sie unsere Website besuchen.
+                    </p>
+                    <p>Beispiele für notwendige Cookies, die wir verwenden:</p>
+                    <ul>
+                        <li>
+                            <strong>Sitzungs-Cookies:</strong> Diese Cookies
+                            ermöglichen es der Website, Ihre Aktivitäten während
+                            Ihrer Sitzung zu speichern, z. B. das Beibehalten
+                            Ihrer Anmeldung, während Sie zwischen den Seiten
+                            navigieren.
+                        </li>
+                        <li>
+                            <strong>Sicherheits-Cookies:</strong> Wir verwenden
+                            Cookies, um sicherzustellen, dass der Nutzer
+                            berechtigt ist, auf bestimmte Bereiche der Website
+                            zuzugreifen, wie beispielsweise sein persönliches
+                            Konto oder Kontaktformulare.
+                        </li>
+                    </ul>
+
+                    <h3>3.2. Leistungs-Cookies</h3>
+                    <p>
+                        Leistungs-Cookies ermöglichen es uns, zu analysieren,
+                        wie Nutzer mit unserer Website interagieren. Diese Daten
+                        helfen uns, die Leistung der Website zu verbessern und
+                        zu verstehen, welche Bereiche der Website Verbesserungen
+                        benötigen. Leistungs-Cookies sammeln Informationen
+                        anonym und sind nicht mit persönlichen Daten verknüpft.
+                    </p>
+                    <p>Beispiele für Leistungs-Cookies, die wir verwenden:</p>
+                    <ul>
+                        <li>
+                            <strong>Google Analytics:</strong> Wir verwenden
+                            Google Analytics-Cookies, um Daten über den
+                            Website-Verkehr und das Nutzerverhalten zu sammeln,
+                            wie z. B. die am häufigsten besuchten Seiten und die
+                            Besuchsdauer. Diese Informationen helfen uns, das
+                            Benutzererlebnis zu optimieren.
+                        </li>
+                    </ul>
+
+                    <h3>3.3. Funktionale Cookies</h3>
+                    <p>
+                        Funktionale Cookies ermöglichen es der Website, Ihre
+                        Auswahl und Präferenzen zu speichern, wie z. B. die
+                        Sprache, Region oder Art des kulturellen Inhalts, den
+                        Sie suchen. Diese Cookies verbessern die
+                        Personalisierung Ihrer Erfahrung auf unserer Website.
+                    </p>
+                    <p>Beispiele für funktionale Cookies, die wir verwenden:</p>
+                    <ul>
+                        <li>
+                            <strong>Spracheinstellungen:</strong> Wir verwenden
+                            Cookies, um Ihre bevorzugte Sprache zu speichern,
+                            damit Sie diese nicht jedes Mal auswählen müssen,
+                            wenn Sie unsere Website besuchen.
+                        </li>
+                        <li>
+                            <strong>Suchpräferenzen:</strong> Wir verwenden
+                            Cookies, um die Filter und Kriterien zu speichern,
+                            die Sie ausgewählt haben, z. B. den gewünschten
+                            kulturellen oder sportlichen Eventtyp, um Ihre Suche
+                            effizienter zu gestalten.
+                        </li>
+                    </ul>
+
+                    <h3>3.4. Werbe-Cookies</h3>
+                    <p>
+                        Werbe-Cookies werden verwendet, um Ihnen personalisierte
+                        Anzeigen basierend auf Ihrem Surfverhalten zu zeigen.
+                        Diese Cookies ermöglichen es uns, Ihnen relevante
+                        Anzeigen zu unseren Nachrichten über Kunst, Sport und
+                        Kultur in Deutschland zu präsentieren, sei es auf
+                        unserer Website oder auf anderen Partner-Websites.
+                    </p>
+                    <p>Beispiele für Werbe-Cookies, die wir verwenden:</p>
+                    <ul>
+                        <li>
+                            <strong>Google Ads:</strong> Wir verwenden Google
+                            Ads-Cookies, um Ihnen personalisierte Anzeigen
+                            basierend auf Ihrer Aktivität auf unserer Website
+                            und Ihrem Surfverhalten auf anderen Websites zu
+                            zeigen.
+                        </li>
+                        <li>
+                            <strong>Facebook Pixel:</strong> Wir verwenden
+                            Facebook Pixel-Cookies, um Ihnen Anzeigen zu unseren
+                            Nachrichten über Kunst, Sport und Kultur in
+                            Deutschland über die Facebook-Plattform anzuzeigen.
+                        </li>
+                    </ul>
+
+                    <h3>3.5. Cookies von sozialen Netzwerken</h3>
+                    <p>
+                        Cookies von sozialen Netzwerken werden verwendet, um die
+                        Integration unserer Website mit sozialen Netzwerken wie
+                        Facebook, Twitter, Instagram und LinkedIn zu
+                        ermöglichen. Diese Cookies erlauben es, Inhalte direkt
+                        von unserer Website über Social-Media-Schaltflächen zu
+                        teilen und die Interaktion der Nutzer mit unseren
+                        Social-Media-Profilen zu messen.
+                    </p>
+                    <p>
+                        Beispiele für Cookies von sozialen Netzwerken, die wir
+                        verwenden:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Facebook:</strong> Wir verwenden
+                            Facebook-Cookies, um personalisierte Anzeigen zu
+                            zeigen und den Nutzern das Teilen von Inhalten auf
+                            ihren Facebook-Profilen zu ermöglichen.
+                        </li>
+                        <li>
+                            <strong>Twitter:</strong> Wir verwenden
+                            Twitter-Cookies, um Inhalte auf Twitter zu teilen
+                            und Interaktionen auf unserem Twitter-Profil zu
+                            verfolgen.
+                        </li>
+                    </ul>
+
+                    <h2>4. Wie Sie Cookies verwalten können</h2>
+                    <p>
+                        Sie haben die vollständige Kontrolle über die Cookies,
+                        die auf Ihrem Gerät gespeichert werden. Sie können
+                        jederzeit entscheiden, Cookies zu deaktivieren oder zu
+                        blockieren, indem Sie die Einstellungen Ihres Browsers
+                        anpassen. Beachten Sie jedoch, dass durch das
+                        Deaktivieren einiger Cookies bestimmte Funktionen auf
+                        unserer Website möglicherweise nicht verfügbar sind oder
+                        nicht ordnungsgemäß funktionieren.
+                    </p>
+                    <p>
+                        Nachfolgend erfahren Sie, wie Sie Cookies in den
+                        gängigsten Browsern verwalten können:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Google Chrome:</strong> Gehen Sie zu
+                            "Einstellungen" > "Datenschutz und Sicherheit" >
+                            "Website-Einstellungen" > "Cookies" und passen Sie
+                            Ihre Präferenzen an.
+                        </li>
+                        <li>
+                            <strong>Mozilla Firefox:</strong> Gehen Sie zu
+                            "Optionen" > "Datenschutz & Sicherheit" > "Cookies
+                            und Website-Daten" und passen Sie Ihre Präferenzen
+                            an.
+                        </li>
+                        <li>
+                            <strong>Safari:</strong> Gehen Sie zu
+                            "Einstellungen" > "Datenschutz" und passen Sie die
+                            Cookie-Optionen an.
+                        </li>
+                        <li>
+                            <strong>Microsoft Edge:</strong> Gehen Sie zu
+                            "Einstellungen" > "Datenschutz, Suche und Dienste" >
+                            "Cookies und Website-Daten" und passen Sie Ihre
+                            Präferenzen an.
+                        </li>
+                    </ul>
+
+                    <h2>5. Links zu anderen Websites</h2>
+                    <p>
+                        Diese Website kann Links zu anderen Websites enthalten,
+                        die nicht von uns betrieben oder kontrolliert werden.
+                        Diese Cookie-Richtlinie gilt nur für unsere Website,
+                        daher empfehlen wir Ihnen, die Cookie-Richtlinie jeder
+                        anderen Website, die Sie besuchen, zu überprüfen.
+                    </p>
+
+                    <h2>6. Änderungen der Cookie-Richtlinie</h2>
+                    <p>
+                        Wir behalten uns das Recht vor, diese Cookie-Richtlinie
+                        jederzeit zu aktualisieren oder zu ändern. Alle
+                        Änderungen an unserer Richtlinie werden auf dieser Seite
+                        veröffentlicht, weshalb wir Ihnen empfehlen, unsere
+                        Richtlinie regelmäßig zu überprüfen.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <footer class="bg-footer-black" id="footer">
+            <div class="container py-7 px-md-5">
+                <div class="row g-0">
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <div class="mb-4 d-inline-block">
+                            <a
+                                class="navbar-brand pt-0 fs-3 text-white d-flex align-items-center"
+                                href="index.html"
+                                ><img
+                                    class="img-fluid"
+                                    src="assets/img/icons/dark-logo-icon.png"
+                                    alt=""
+                                    width="25"
+                                    height="25"
+                                /><span class="fw-bolder ms-2">Puls</span
+                                ><span class="fw-thin">Kunst</span></a
+                            >
+                        </div>
+                        <div class="col-12 col-md-10 text-300 mb-3">
+                            <i class="fas fa-map-marker-alt"></i
+                            ><a
+                                class="nav-link text-300 d-inline"
+                                href="https://www.google.com/maps/place/2109+WS+09+Oxford+Rd+%23127+ParkVilla+Hills,+"
+                                >Dieselstraße 22, 61184 Karben</a
+                            >
+                        </div>
+                        <div class="col-12 col-md-10 text-300 mb-3">
+                            <i class="fas fa-phone"></i
+                            ><a
+                                class="nav-link text-300 d-inline"
+                                href="tel:+8801976476893"
+                                >+4960399345290</a
+                            >
+                        </div>
+                        <div class="col-12 col-md-10 text-300 mb-3">
+                            <i class="fas fa-envelope"></i
+                            ><a
+                                class="nav-link text-300 d-inline"
+                                href="mailto:scrscrumbledegg@gmail.com"
+                                >puls_kunst@gmail.com</a
+                            >
+                        </div>
+                        <div class="row">
+                            <h4 class="text-white">Website-Navigation</h4>
+                            <div
+                                class="col-md-6"
+                                style="display: flex; flex-direction: column"
+                            >
+                                <a
+                                    class="social-icons"
+                                    href="business-model.html"
+                                    target="_blank"
+                                    >Geschäftsmodell</a
+                                >
+                                <a
+                                    class="social-icons"
+                                    href="terms-of-use.html"
+                                    target="_blank"
+                                    >Nutzungsbedingungen</a
+                                >
+                                <a
+                                    class="social-icons"
+                                    href="disclaimer.html"
+                                    target="_blank"
+                                    >Haftungsausschluss</a
+                                >
+                            </div>
+                            <div
+                                class="col-md-6"
+                                style="display: flex; flex-direction: column"
+                            >
+                                <a
+                                    class="social-icons"
+                                    href="cookie-policy.html"
+                                    target="_blank"
+                                    >Cookie-Richtlinie</a
+                                >
+                                <a
+                                    class="social-icons"
+                                    href="privacy-policy.html"
+                                    target="_blank"
+                                    >Datenschutzrichtlinie</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-white mb-2">
+                            ABONNIEREN SIE UNSEREN NEWSLETTER
+                        </h5>
+                        <form action="thanks.html" method="get">
+                            <div
+                                class="form-floating mb-5 position-relative text-200"
+                            >
+                                <input
+                                    class="form-control form-fotogency-header-control text-200"
+                                    id="email"
+                                    type="email"
+                                    placeholder="name@example.com"
+                                    required="required"
+                                />
+                                <label class="text-300 mb-1" for="email"
+                                    >E-Mail</label
+                                >
+                                <div class="position-absolute end-0 top-0">
+                                    <button
+                                        class="btn shadow-none px-0"
+                                        type="submit"
+                                    >
+                                        <img
+                                            class="ms-3"
+                                            src="assets/img/icons/long-arrow.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div
+                            class="d-flex gap-2 flex-wrap justify-content-between align-items-center"
+                        >
+                            <a
+                                class="social-icons"
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                >Facebook</a
+                            ><a
+                                class="social-icons"
+                                href="https://twitter.com/"
+                                target="_blank"
+                                >Twitter</a
+                            ><a
+                                class="social-icons"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                >Instagram</a
+                            ><a
+                                class="social-icons"
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                                >Youtube</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h3 class="text-white">Haftungsausschluss</h3>
+                        <p style="color: #8e8e8e">
+                            Alle Inhalte auf dieser Website beziehen sich auf
+                            aktuelle Nachrichten aus der Welt der Kunst, Sport
+                            und Kultur. Diese Themen umfassen wichtige
+                            Veranstaltungen, Ausstellungen und Wettbewerbe, die
+                            die weltweite Kunst- und Sportgemeinschaft
+                            betreffen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div style="text-align: center">
+                <i
+                    class="bx bx-cookie"
+                    style="font-size: 48px; color: #f59300"
+                ></i>
+                <h2 style="font-size: 24px; color: #333; margin-top: 10px">
+                    Zustimmen zur Verwendung von Cookies
+                </h2>
+            </div>
+
+            <div class="data">
+                <p
+                    style="
+                        font-size: 16px;
+                        color: #555;
+                        text-align: justify;
+                        margin: 20px 0;
+                        text-align: center;
+                    "
+                >
+                    Um dir eine optimale Benutzererfahrung auf unserer Website
+                    zu bieten, verwenden wir Cookies. Diese helfen uns, dir
+                    maßgeschneiderte Informationen und Neuigkeiten aus der Welt
+                    der Kunst, des Sports und der Kultur zu präsentieren. Du
+                    kannst mehr erfahren, indem du unsere
+                    <a
+                        href="datenschutzrichtlinie.html"
+                        style="
+                            color: #f59300;
+                            text-decoration: none;
+                            font-weight: bold;
+                        "
+                        >Datenschutzrichtlinie</a
+                    >
+                    und unsere
+                    <a
+                        href="cookie-policy.html"
+                        style="
+                            color: #f59300;
+                            text-decoration: none;
+                            font-weight: bold;
+                        "
+                        >Cookie-Richtlinie</a
+                    >
+                    liest.
+                </p>
+            </div>
+
+            <div class="buttons" style="text-align: center">
+                <button
+                    class="cookie-button"
+                    id="acceptBtn"
+                    style="
+                        background-color: #f59300;
+                        color: white;
+                        border: none;
+                        padding: 12px 24px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                    "
+                >
+                    Akzeptieren
+                </button>
+                <button
+                    class="cookie-button"
+                    id="declineBtn"
+                    style="
+                        background-color: #e74c3c;
+                        color: white;
+                        border: none;
+                        padding: 12px 24px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        border-radius: 5px;
+                    "
+                >
+                    Ablehnen
+                </button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- ===============================================-->
+        <!--    JavaScripts-->
+        <!-- ===============================================-->
+        <script src="vendors/popper/popper.min.js"></script>
+        <script src="vendors/bootstrap/bootstrap.min.js"></script>
+        <script src="vendors/anchorjs/anchor.min.js"></script>
+        <script src="vendors/is/is.min.js"></script>
+        <script src="vendors/fontawesome/all.min.js"></script>
+        <script src="vendors/lodash/lodash.min.js"></script>
+        <script src="vendors/prism/prism.js"></script>
+        <script src="vendors/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/cookiebanner.js"></script>
+    </body>
+</html>

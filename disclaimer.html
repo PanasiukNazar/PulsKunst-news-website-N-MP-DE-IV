@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- ===============================================-->
+        <!--    Document Title-->
+        <!-- ===============================================-->
+        <title>PulsKunst</title>
+
+        <!-- ===============================================-->
+        <!--    Favicons-->
+        <!-- ===============================================-->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/img/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/img/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/img/favicons/favicon-16x16.png"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="assets/img/favicons/favicon.ico"
+        />
+        <meta
+            name="msapplication-TileImage"
+            content="assets/img/favicons/mstile-150x150.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- ===============================================-->
+        <!--    Stylesheets-->
+        <!-- ===============================================-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link href="vendors/prism/prism.css" rel="stylesheet" />
+        <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+        <link href="assets/css/theme.css" rel="stylesheet" />
+        <link href="assets/css/user.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- ===============================================-->
+        <!--    Main Content-->
+        <!-- ===============================================-->
+        <main class="main" id="top">
+            <div class="cursor-outer d-none d-md-block"></div>
+            <nav class="navbar navbar-light py-3 px-0 overflow-hidden mb-5">
+                <div class="container px-md-5">
+                    <div class="row w-100 g-0 justify-content-between">
+                        <div class="col-8">
+                            <div class="d-inline-block">
+                                <a
+                                    class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center"
+                                    href="index.html"
+                                >
+                                    <img
+                                        class="img-fluid"
+                                        src="assets/img/icons/logo-icon.png"
+                                        alt=""
+                                    />
+                                    <span class="fw-bolder ms-2">Puls</span
+                                    ><span class="fw-thin">Kunst</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 d-lg-none text-end pe-0">
+                            <button
+                                class="btn p-0 shadow-none text-black fs-2 d-inline-block"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#navbarOffcanvas"
+                                aria-controls="navbarOffcanvas"
+                                aria-expanded="false"
+                                aria-label="Toggle offcanvas navigation"
+                            >
+                                <span class="menu-bar"></span>
+                            </button>
+                        </div>
+                        <div
+                            class="offcanvas offcanvas-end px-0"
+                            id="navbarOffcanvas"
+                            aria-labelledby="navbarOffcanvasTitle"
+                            aria-hidden="true"
+                        >
+                            <div class="offcanvas-header justify-content-end">
+                                <h5
+                                    class="visually-hidden offcanvas-title"
+                                    id="navbarOffcanvasTitle"
+                                >
+                                    Menu
+                                </h5>
+                                <button
+                                    class="btn p-0 shadow-none text-black fs-2 d-inline text-end"
+                                    type="button"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"
+                                >
+                                    <span class="menu-close-bar"></span>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body px-0">
+                                <div
+                                    class="d-lg-flex flex-center-start gap-3 overflow-hidden"
+                                >
+                                    <ul class="navbar-nav ms-auto fs-4 ps-6">
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="index.html"
+                                                >Home</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="exhibitions.html"
+                                                >Katalog</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="about.html"
+                                                >Über uns</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="blog.html"
+                                                >Kontakt</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div
+                                class="d-none d-lg-flex justify-content-end position-relative z-index-1"
+                            >
+                                <div
+                                    class="position-absolute absolute-centered z-index--1"
+                                >
+                                    <h1
+                                        class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1"
+                                    >
+                                        Home
+                                    </h1>
+                                </div>
+                                <div class="d-flex gap-3 align-items-start">
+                                    <a
+                                        class="mb-0 ms-auto text-warning fs-0 fw-bold text-uppercase"
+                                        href="blog.html#contact"
+                                        >Jetzt kontaktieren</a
+                                    >
+                                    <ul
+                                        class="navbar-nav navbar-fotogency ms-auto text-end"
+                                    >
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="index.html"
+                                                >Home</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="exhibitions.html"
+                                                >Katalog</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="about.html"
+                                                >Über uns</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="contact.html"
+                                                >Kontakt</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <article
+                class="container additional-wrapper"
+                style="margin-top: 20px"
+            >
+                <div class="page__content" style="padding: 20px 0px">
+                    <h1>
+                        Haftungsausschluss - Nachrichten über Kunst, Sport und
+                        Kultur in Deutschland
+                    </h1>
+
+                    <p>
+                        Dieser Haftungsausschluss dient dazu, unseren Nutzern
+                        und Lesern die relevanten Informationen zur Nutzung
+                        unserer Website und der von uns angebotenen Dienste
+                        bereitzustellen. Auf unserem Nachrichtenportal für
+                        Kunst, Sport und Kultur in Deutschland bemühen wir uns,
+                        einen transparenten und professionellen Service
+                        anzubieten. Es ist jedoch wichtig, dass Sie sich der
+                        Bedingungen und Bestimmungen bewusst sind, die die
+                        Nutzung dieser Plattform und unsere rechtlichen
+                        Verpflichtungen regeln.
+                    </p>
+
+                    <h2>1. Zweck der Website</h2>
+                    <p>
+                        Die Website unseres Portals hat das Ziel, allgemeine
+                        Informationen zu Veranstaltungen, Nachrichten und
+                        Neuigkeiten im Zusammenhang mit Kunst, Sport und Kultur
+                        in Deutschland bereitzustellen. Alle auf dieser Website
+                        bereitgestellten Informationen dienen nur zu
+                        Informationszwecken und können sich ändern. Wir
+                        garantieren nicht die Genauigkeit, Vollständigkeit oder
+                        Verfügbarkeit der auf unserer Website enthaltenen
+                        Informationen.
+                    </p>
+                    <p>
+                        Wir bemühen uns, genaue Daten über kulturelle
+                        Veranstaltungen, Sportaktivitäten und Ausstellungen zu
+                        liefern. Wir übernehmen jedoch keine Verantwortung für
+                        Fehler, Auslassungen oder Ungenauigkeiten, die im Inhalt
+                        der Website enthalten sein können.
+                    </p>
+
+                    <h2>2. Geistiges Eigentum</h2>
+                    <p>
+                        Alle Inhalte auf dieser Website, einschließlich, aber
+                        nicht beschränkt auf Texte, Bilder, Grafiken, Logos,
+                        Videos und Software, sind Eigentum unseres
+                        Nachrichtenportals oder der jeweiligen Rechteinhaber.
+                        Die Nutzung von Material auf dieser Website ohne die
+                        ausdrückliche Zustimmung der Urheberrechtsinhaber ist
+                        strengstens untersagt.
+                    </p>
+                    <p>
+                        Nutzer dieser Website dürfen Inhalte nur für den
+                        persönlichen und nicht-kommerziellen Gebrauch anzeigen
+                        und herunterladen. Jede Vervielfältigung, Verbreitung,
+                        Übertragung oder Veränderung der Inhalte ist untersagt,
+                        es sei denn, eine vorherige schriftliche Genehmigung der
+                        Rechteinhaber liegt vor.
+                    </p>
+
+                    <h2>3. Kein professioneller Rat</h2>
+                    <p>
+                        Der Inhalt dieser Website sollte nicht als Beratung in
+                        irgendeinem Bereich betrachtet werden. Jede Entscheidung
+                        bezüglich der Teilnahme an Veranstaltungen oder
+                        Aktivitäten im Zusammenhang mit Kunst, Sport oder Kultur
+                        sollte auf einer Beratung mit qualifizierten Fachleuten
+                        basieren.
+                    </p>
+                    <p>
+                        Obwohl wir versuchen, relevante und aktuelle
+                        Informationen über den kulturellen Bereich in
+                        Deutschland bereitzustellen, sind wir nicht
+                        verantwortlich für Entscheidungen, die ein Nutzer
+                        basierend auf den Informationen auf unserer Website
+                        trifft. Wir empfehlen allen Lesern, sich vor der
+                        Teilnahme an Veranstaltungen oder Aktivitäten
+                        entsprechend beraten zu lassen.
+                    </p>
+
+                    <h2>
+                        4. Verfügbarkeit von Veranstaltungen und Aktivitäten
+                    </h2>
+                    <p>
+                        Die auf dieser Website aufgeführten Veranstaltungen und
+                        Aktivitäten unterliegen Änderungen ohne vorherige
+                        Ankündigung. Wir garantieren nicht die kontinuierliche
+                        Verfügbarkeit der auf der Website angezeigten
+                        Veranstaltungen, da diese seit der Veröffentlichung
+                        online möglicherweise abgesagt, geändert oder ausgesetzt
+                        wurden.
+                    </p>
+                    <p>
+                        Es ist wichtig, dass Nutzer direkt mit uns oder den
+                        Veranstaltern Kontakt aufnehmen, um die Verfügbarkeit
+                        der gewünschten Veranstaltungen zu bestätigen und
+                        aktuelle Informationen zu Terminen und Bedingungen zu
+                        erhalten. Obwohl wir uns bemühen, die Informationen
+                        genau und aktuell zu halten, können wir nicht
+                        garantieren, dass alle Daten in Echtzeit genau sind.
+                    </p>
+
+                    <h2>5. Links zu Drittseiten</h2>
+                    <p>
+                        Diese Website kann Links zu Drittwebsites enthalten, die
+                        nicht im Besitz unseres Portals sind oder von diesem
+                        kontrolliert werden. Wir übernehmen keine Verantwortung
+                        für den Inhalt oder die Datenschutzpraktiken dieser
+                        Seiten. Der Zugriff auf Drittseiten erfolgt auf eigenes
+                        Risiko, und wir empfehlen, die Datenschutzrichtlinien
+                        und Nutzungsbedingungen dieser Seiten vor dem Surfen zu
+                        überprüfen.
+                    </p>
+                    <p>
+                        Die Aufnahme von Links zu Drittseiten bedeutet nicht,
+                        dass wir diese Seiten gutheißen oder empfehlen. Wir
+                        bieten diese Links lediglich zu Ihrer Bequemlichkeit an.
+                    </p>
+
+                    <h2>6. Haftungsbeschränkung</h2>
+                    <p>
+                        In keinem Fall haftet unser Nachrichtenportal für
+                        direkte, indirekte, zufällige, besondere oder
+                        Folgeschäden, die aus der Nutzung oder der Unfähigkeit,
+                        diese Website oder die angebotenen Dienste zu nutzen,
+                        entstehen, selbst wenn wir auf die Möglichkeit solcher
+                        Schäden hingewiesen wurden.
+                    </p>
+                    <p>
+                        Dies schließt, aber nicht beschränkt auf, Schäden durch
+                        Datenverlust, Einkommensverlust, Geschäftsopportunitäten
+                        oder andere immaterielle Verluste. Durch die Nutzung
+                        dieser Website akzeptieren Sie, dass Sie alle Risiken im
+                        Zusammenhang mit der Nutzung dieser Plattform
+                        übernehmen, einschließlich der Konsequenzen, die sich
+                        aus der Entscheidung ergeben, auf Basis der
+                        bereitgestellten Informationen zu handeln.
+                    </p>
+
+                    <h2>
+                        7. Datenschutzrichtlinie und Schutz personenbezogener
+                        Daten
+                    </h2>
+                    <p>
+                        Wir schätzen Ihre Privatsphäre und verpflichten uns,
+                        Ihre personenbezogenen Daten zu schützen. Wir sammeln,
+                        verarbeiten und nutzen personenbezogene Daten nur in
+                        Übereinstimmung mit den geltenden Datenschutzgesetzen in
+                        Deutschland, wie der Datenschutz-Grundverordnung
+                        (DSGVO). Die auf dieser Website angegebenen
+                        personenbezogenen Daten werden ausschließlich für die
+                        angegebenen Zwecke verwendet und ohne Ihre Zustimmung
+                        nicht an Dritte weitergegeben, es sei denn, es ist zur
+                        Erfüllung gesetzlicher Anforderungen erforderlich.
+                    </p>
+                    <p>
+                        Wir empfehlen Ihnen, unsere Datenschutzrichtlinie zu
+                        überprüfen, um detaillierte Informationen darüber zu
+                        erhalten, wie wir Ihre personenbezogenen Daten sammeln
+                        und schützen.
+                    </p>
+
+                    <h2>8. Google Ads und Datensammlung</h2>
+                    <p>
+                        Diese Website verwendet Google Ads, um nutzerbezogene
+                        Werbung anzuzeigen. Google Ads nutzt Cookies, um Daten
+                        zu sammeln und personalisierte Werbung anzuzeigen. Die
+                        gesammelten Informationen können Ihre IP-Adresse,
+                        besuchte Webseiten, Suchbegriffe und andere
+                        Interaktionen mit der Website umfassen.
+                    </p>
+                    <p>
+                        Durch die Interaktion mit Google-Anzeigen stimmen Sie
+                        der Nutzung von Cookies und der Datenverarbeitung gemäß
+                        den Google-Richtlinien zu. Wenn Sie die Google
+                        Ads-Cookies verwalten oder deaktivieren möchten, können
+                        Sie dies tun, indem Sie die Seite der
+                        <a
+                            href="https://optout.networkadvertising.org/"
+                            target="_blank"
+                            >Deaktivierung der Google-Werbenetzwerk</a
+                        >
+                        besuchen.
+                    </p>
+
+                    <h2>9. Änderungen dieses Haftungsausschlusses</h2>
+                    <p>
+                        Wir behalten uns das Recht vor, diesen
+                        Haftungsausschluss jederzeit zu ändern. Änderungen
+                        treten in Kraft, sobald eine aktualisierte Version auf
+                        dieser Website veröffentlicht wird, und die zuletzt
+                        überarbeitete Version wird angezeigt.
+                    </p>
+                    <p>
+                        Es liegt in Ihrer Verantwortung, diesen
+                        Haftungsausschluss regelmäßig zu überprüfen, um über
+                        Änderungen informiert zu bleiben. Die fortgesetzte
+                        Nutzung dieser Website nach der Veröffentlichung von
+                        Änderungen stellt Ihre Zustimmung zu den geänderten
+                        Bedingungen dar.
+                    </p>
+
+                    <h2>
+                        10. Haftungsausschluss für Tippfehler und Inhaltfehler
+                    </h2>
+                    <p>
+                        Wir tun unser Bestes, um sicherzustellen, dass die auf
+                        unserer Website bereitgestellten Informationen,
+                        einschließlich der Artikel und
+                        Veranstaltungsbeschreibungen, korrekt und aktuell sind.
+                        Wir können jedoch nicht garantieren, dass keine
+                        Tippfehler, Auslassungen oder Ungenauigkeiten in der
+                        Beschreibung von Veranstaltungen oder kulturellen
+                        Aktivitäten vorhanden sind. Wir behalten uns das Recht
+                        vor, Fehler im Inhalt der Website zu korrigieren.
+                    </p>
+                    <p>
+                        Sollte ein Fehler in den Details einer Veranstaltung
+                        oder Aktivität festgestellt werden, werden wir uns so
+                        schnell wie möglich mit Ihnen in Verbindung setzen, um
+                        etwaige Diskrepanzen zu korrigieren.
+                    </p>
+
+                    <h2>11. Verantwortung des Nutzers</h2>
+                    <p>
+                        Durch die Nutzung dieser Website verpflichten Sie sich,
+                        diese nur für legale Zwecke und gemäß den Gesetzen und
+                        Vorschriften in Deutschland zu nutzen. Es ist untersagt,
+                        diese Website für betrügerische oder illegale
+                        Aktivitäten zu verwenden oder Inhalte zu
+                        veröffentlichen, die geistige Eigentumsrechte Dritter
+                        verletzen.
+                    </p>
+                    <p>
+                        Sie sind für die Informationen verantwortlich, die Sie
+                        über diese Website einreichen, und garantieren, dass
+                        diese Informationen genau sind und keine geistigen
+                        Eigentumsrechte, Urheberrechte oder Markenrechte Dritter
+                        verletzen.
+                    </p>
+
+                    <h2>12. Gerichtsbarkeit und anwendbares Recht</h2>
+                    <p>
+                        Dieser Haftungsausschluss und die Nutzungsbedingungen
+                        unserer Website unterliegen den Gesetzen von
+                        Deutschland. Alle Streitigkeiten im Zusammenhang mit der
+                        Nutzung dieser Website werden vor den zuständigen
+                        Gerichten in Deutschland entschieden.
+                    </p>
+                    <p>
+                        Sollte eine Bestimmung dieses Haftungsausschlusses für
+                        ungültig oder nicht durchsetzbar erklärt werden, bleiben
+                        die übrigen Bestimmungen weiterhin gültig und anwendbar.
+                    </p>
+
+                    <h2>Schlussfolgerung</h2>
+                    <p>
+                        Dieser Haftungsausschluss wurde erstellt, um Sie über
+                        die ordnungsgemäße Nutzung unserer Website und der von
+                        uns angebotenen Dienste als Nachrichtenportal für Kunst,
+                        Sport und Kultur in Deutschland zu informieren. Durch
+                        die Nutzung unserer Website akzeptieren Sie diese
+                        Bedingungen, die jederzeit geändert werden können. Wenn
+                        Sie Fragen oder Bedenken zu diesem Haftungsausschluss
+                        oder unseren Diensten haben, kontaktieren Sie uns bitte.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <footer class="bg-footer-black" id="footer">
+            <div class="container py-7 px-md-5">
+                <div class="row g-0">
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <div class="mb-4 d-inline-block">
+                            <a
+                                class="navbar-brand pt-0 fs-3 text-white d-flex align-items-center"
+                                href="index.html"
+                                ><img
+                                    class="img-fluid"
+                                    src="assets/img/icons/dark-logo-icon.png"
+                                    alt=""
+                                    width="25"
+                                    height="25"
+                                /><span class="fw-bolder ms-2">Puls</span
+                                ><span class="fw-thin">Kunst</span></a
+                            >
+                        </div>
+                        <div class="col-12 col-md-10 text-300 mb-3">
+                            <i class="fas fa-map-marker-alt"></i
+                            ><a
+                                class="nav-link text-300 d-inline"
+                                href="https://www.google.com/maps/place/2109+WS+09+Oxford+Rd+%23127+ParkVilla+Hills,+"
+                                >Dieselstraße 22, 61184 Karben</a
+                            >
+                        </div>
+                        <div class="col-12 col-md-10 text-300 mb-3">
+                            <i class="fas fa-phone"></i
+                            ><a
+                                class="nav-link text-300 d-inline"
+                                href="tel:+8801976476893"
+                                >+4960399345290</a
+                            >
+                        </div>
+                        <div class="col-12 col-md-10 text-300 mb-3">
+                            <i class="fas fa-envelope"></i
+                            ><a
+                                class="nav-link text-300 d-inline"
+                                href="mailto:scrscrumbledegg@gmail.com"
+                                >puls_kunst@gmail.com</a
+                            >
+                        </div>
+                        <div class="row">
+                            <h4 class="text-white">Website-Navigation</h4>
+                            <div
+                                class="col-md-6"
+                                style="display: flex; flex-direction: column"
+                            >
+                                <a
+                                    class="social-icons"
+                                    href="business-model.html"
+                                    target="_blank"
+                                    >Geschäftsmodell</a
+                                >
+                                <a
+                                    class="social-icons"
+                                    href="terms-of-use.html"
+                                    target="_blank"
+                                    >Nutzungsbedingungen</a
+                                >
+                                <a
+                                    class="social-icons"
+                                    href="disclaimer.html"
+                                    target="_blank"
+                                    >Haftungsausschluss</a
+                                >
+                            </div>
+                            <div
+                                class="col-md-6"
+                                style="display: flex; flex-direction: column"
+                            >
+                                <a
+                                    class="social-icons"
+                                    href="cookie-policy.html"
+                                    target="_blank"
+                                    >Cookie-Richtlinie</a
+                                >
+                                <a
+                                    class="social-icons"
+                                    href="privacy-policy.html"
+                                    target="_blank"
+                                    >Datenschutzrichtlinie</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-white mb-2">
+                            ABONNIEREN SIE UNSEREN NEWSLETTER
+                        </h5>
+                        <form action="thanks.html" method="get">
+                            <div
+                                class="form-floating mb-5 position-relative text-200"
+                            >
+                                <input
+                                    class="form-control form-fotogency-header-control text-200"
+                                    id="email"
+                                    type="email"
+                                    placeholder="name@example.com"
+                                    required="required"
+                                />
+                                <label class="text-300 mb-1" for="email"
+                                    >E-Mail</label
+                                >
+                                <div class="position-absolute end-0 top-0">
+                                    <button
+                                        class="btn shadow-none px-0"
+                                        type="submit"
+                                    >
+                                        <img
+                                            class="ms-3"
+                                            src="assets/img/icons/long-arrow.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div
+                            class="d-flex gap-2 flex-wrap justify-content-between align-items-center"
+                        >
+                            <a
+                                class="social-icons"
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                >Facebook</a
+                            ><a
+                                class="social-icons"
+                                href="https://twitter.com/"
+                                target="_blank"
+                                >Twitter</a
+                            ><a
+                                class="social-icons"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                >Instagram</a
+                            ><a
+                                class="social-icons"
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                                >Youtube</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h3 class="text-white">Haftungsausschluss</h3>
+                        <p style="color: #8e8e8e">
+                            Alle Inhalte auf dieser Website beziehen sich auf
+                            aktuelle Nachrichten aus der Welt der Kunst, Sport
+                            und Kultur. Diese Themen umfassen wichtige
+                            Veranstaltungen, Ausstellungen und Wettbewerbe, die
+                            die weltweite Kunst- und Sportgemeinschaft
+                            betreffen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div style="text-align: center">
+                <i
+                    class="bx bx-cookie"
+                    style="font-size: 48px; color: #f59300"
+                ></i>
+                <h2 style="font-size: 24px; color: #333; margin-top: 10px">
+                    Zustimmen zur Verwendung von Cookies
+                </h2>
+            </div>
+
+            <div class="data">
+                <p
+                    style="
+                        font-size: 16px;
+                        color: #555;
+                        text-align: justify;
+                        margin: 20px 0;
+                        text-align: center;
+                    "
+                >
+                    Um dir eine optimale Benutzererfahrung auf unserer Website
+                    zu bieten, verwenden wir Cookies. Diese helfen uns, dir
+                    maßgeschneiderte Informationen und Neuigkeiten aus der Welt
+                    der Kunst, des Sports und der Kultur zu präsentieren. Du
+                    kannst mehr erfahren, indem du unsere
+                    <a
+                        href="datenschutzrichtlinie.html"
+                        style="
+                            color: #f59300;
+                            text-decoration: none;
+                            font-weight: bold;
+                        "
+                        >Datenschutzrichtlinie</a
+                    >
+                    und unsere
+                    <a
+                        href="cookie-policy.html"
+                        style="
+                            color: #f59300;
+                            text-decoration: none;
+                            font-weight: bold;
+                        "
+                        >Cookie-Richtlinie</a
+                    >
+                    liest.
+                </p>
+            </div>
+
+            <div class="buttons" style="text-align: center">
+                <button
+                    class="cookie-button"
+                    id="acceptBtn"
+                    style="
+                        background-color: #f59300;
+                        color: white;
+                        border: none;
+                        padding: 12px 24px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                    "
+                >
+                    Akzeptieren
+                </button>
+                <button
+                    class="cookie-button"
+                    id="declineBtn"
+                    style="
+                        background-color: #e74c3c;
+                        color: white;
+                        border: none;
+                        padding: 12px 24px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        border-radius: 5px;
+                    "
+                >
+                    Ablehnen
+                </button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- ===============================================-->
+        <!--    JavaScripts-->
+        <!-- ===============================================-->
+        <script src="vendors/popper/popper.min.js"></script>
+        <script src="vendors/bootstrap/bootstrap.min.js"></script>
+        <script src="vendors/anchorjs/anchor.min.js"></script>
+        <script src="vendors/is/is.min.js"></script>
+        <script src="vendors/fontawesome/all.min.js"></script>
+        <script src="vendors/lodash/lodash.min.js"></script>
+        <script src="vendors/prism/prism.js"></script>
+        <script src="vendors/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/cookiebanner.js"></script>
+    </body>
+</html>
